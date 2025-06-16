@@ -1,0 +1,13 @@
+# Arquivos de Sistema
+.DS_Store
+
+# Ambiente Virtual
+venv/
+*.pyc
+__pycache__/
+
+# Banco de Dados
+*.sqlite3
+
+# Arquivos de segredos ou configuração local (se você tiver)
+.env

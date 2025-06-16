@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Movimentações{% endblock %}
+
+{% block content %}
+<h2>Movimentações</h2>
+<a href="{% url 'nova_movimentacao' %}" class="btn btn-primary mb-3">Nova Movimentação</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Produto</th>
+            <th>Tipo</th>
+            <th>Quantidade</th>
+            <th>Usuário</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mov in movimentacoes %}
+        <tr>
+            <td>{{ mov.data|date:"d/m/Y H:i" }}</td>
+            <td>{{ mov.produto }}</td>
+            <td>{{ mov.get_tipo_display }}</td>
+            <td>{{ mov.quantidade }}</td>
+            <td>{{ mov.usuario }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
