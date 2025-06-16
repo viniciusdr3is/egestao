@@ -12,8 +12,8 @@ Este é um aplicativo de gestão desenvolvido pelo aluno **Vinicius** para fins 
 
 1. Clone o repositório:
     ```bash
-    git clone <url-do-repositorio>
-    cd <nome-do-diretorio>
+    git clone https://github.com/viniciusdr3is/egestao
+    cd egestao
     ```
 
 2. Crie o ambiente virtual:
